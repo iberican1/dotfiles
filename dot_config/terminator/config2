@@ -1,0 +1,42 @@
+[profiles]
+  [[Monitor]]
+    allow_bold = False
+    icon_bell = False
+    background_color = "#100000"
+    background_darkness = 0.93
+    background_type = transparent
+    font = Monospace 16
+    foreground_color = "#DCDfff"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_lines = 3000
+    scrollback_infinite = True
+    use_system_font = False
+[layouts]
+  [[Monitor]]
+    [[[root]]]
+      fullscreen = False
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 1920:0
+      size = 1920, 1080
+      title = Monitor
+      type = Window
+    [[[tabs]]]
+      active_page = 0
+      labels = top, bash
+      order = 0
+      parent = root
+      type = Notebook
+    [[[htop]]]
+      command = top ; bash
+      order = A
+      parent = tabs
+      type = Terminal
+    [[[cmus]]]
+      command = top ; bash
+      order = B
+      parent = tabs
+      type = Terminal

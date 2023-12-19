@@ -1,0 +1,136 @@
+[global_config]
+  handle_size = 2
+  borderless = True
+  homogeneous_tabbar = False
+  suppress_multiple_term_dialog = True
+[keybindings]
+[profiles]
+  [[default]]
+    background_darkness = 0.63
+    background_type = transparent
+    foreground_color = "#ffffff"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scroll_on_keystroke = False
+    scrollback_infinite = True
+    exit_action = hold
+    login_shell = True
+    custom_command = mpv http://piehole:8000 ; zsh
+  [[New Profile]]
+    background_darkness = 0.64
+    background_type = transparent
+    foreground_color = "#e53c00"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scroll_on_keystroke = False
+    scrollback_infinite = True
+    exit_action = hold
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    use_custom_command = True
+    custom_command = cava ; zsh
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+  [[controller]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:0
+      maximised = False
+      fullscreen = False
+      size = 1834, 873
+      title = cava
+      last_active_term = 5051f1b9-60e5-4366-b6e0-861c92432ab0
+      last_active_window = True
+    [[[child1]]]
+      type = VPaned
+      parent = child0
+      order = 0
+      position = 507
+      ratio = 0.5841013824884793
+    [[[child2]]]
+      type = HPaned
+      parent = child1
+      order = 0
+      position = 717
+      ratio = 0.3920174958993986
+    [[[terminal3]]]
+      type = Terminal
+      parent = child2
+      order = 0
+      profile = default
+      uuid = 76dc9144-6332-41b0-9a5a-db4e1f1bf5f0
+      command = " mpv http://piehole:8000 ; bash"
+      directory = /home/rich
+    [[[terminal4]]]
+      type = Terminal
+      parent = child2
+      order = 1
+      profile = default
+      uuid = 4456783e-84aa-423d-81d5-b68a1f80cad6
+      command = ssh rich@piehole -t ncmpcpp ; bash
+      directory = /home/rich
+    [[[terminal5]]]
+      type = Terminal
+      parent = child1
+      order = 1
+      profile = default
+      uuid = 5051f1b9-60e5-4366-b6e0-861c92432ab0
+      command = cava ; bash
+      directory = /home/rich
+  [[pimood]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:0
+      maximised = False
+      fullscreen = False
+      size = 1834, 873
+      title = cava
+      last_active_term = 5051f1b9-60e5-4366-b6e0-861c92432ab0
+      last_active_window = True
+    [[[child1]]]
+      type = VPaned
+      parent = child0
+      order = 0
+      position = 507
+      ratio = 0.5841013824884793
+    [[[child2]]]
+      type = HPaned
+      parent = child1
+      order = 0
+      position = 717
+      ratio = 0.3920174958993986
+    [[[terminal3]]]
+      type = Terminal
+      parent = child2
+      order = 0
+      profile = default
+      uuid = 76dc9144-6332-41b0-9a5a-db4e1f1bf5f0
+      command = " mpv http://pimood:8000 ; bash"
+      directory = /home/rich
+    [[[terminal4]]]
+      type = Terminal
+      parent = child2
+      order = 1
+      profile = default
+      uuid = 4456783e-84aa-423d-81d5-b68a1f80cad6
+      command = ssh rich@pimood -t ncmpcpp ; bash
+      directory = /home/rich
+    [[[terminal5]]]
+      type = Terminal
+      parent = child1
+      order = 1
+      profile = default
+      uuid = 5051f1b9-60e5-4366-b6e0-861c92432ab0
+      command = cava ; bash
+      directory = /home/rich
+[plugins]
