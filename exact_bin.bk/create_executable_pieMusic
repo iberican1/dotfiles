@@ -1,4 +1,0 @@
-#!/bin/bash
-
-#terminator -l controller 
-terminator -l controller &

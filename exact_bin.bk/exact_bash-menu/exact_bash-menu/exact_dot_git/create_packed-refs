@@ -1,8 +1,0 @@
-# pack-refs with: peeled fully-peeled sorted 
-c0c3cad32e78b44e0638fb45ef7ebcf84b6bc2f8 refs/remotes/origin/bash-menu-meta
-40bcf3b4595b0318c5daf42ac7a1d89b5d6182b5 refs/remotes/origin/master
-990e341dd7a56d5dc927aeb66c8c87900066094e refs/remotes/origin/preview-bar
-6908cef9fa859f24b5bc939f12a0c1422191be52 refs/tags/1.0.0
-1e83a70739c84468ae25fa23bf5116f1673fd930 refs/tags/1.0.1
-3b5bfe3ca8c8e524b26606aa662ed908438126ec refs/tags/1.0.2
-40bcf3b4595b0318c5daf42ac7a1d89b5d6182b5 refs/tags/1.1.0
