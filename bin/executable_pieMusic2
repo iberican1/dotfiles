@@ -1,5 +1,0 @@
-#!/bin/bash
-
-#terminator -l pimood  > /dev/null 2>&1 
-#nohup terminator -l pimood  &
-terminator -l pimood  &
